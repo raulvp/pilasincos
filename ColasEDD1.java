@@ -7,8 +7,7 @@ public class ColasEDD1 {
    
     public static void main(String[] args) {
         Queue<Integer> colita = new LinkedList<Integer>(); //creando la cola
-        
-        System.out.println("El cliente a ser atendido: "
+                System.out.println("El cliente a ser atendido: "
                 +cliente.peek().getNombre()+" con ticket "
                 +cliente.peek().getTicket());
         
@@ -20,20 +19,15 @@ public class ColasEDD1 {
         
         System.out.println("El ticket a ser atendido: "
                 +colita.peek());
-        
         System.out.println("El tamaño de la cola: "
                 +colita.size());
-        
         System.out.println("Esta vacia la cola? "
                 +colita.isEmpty());
-        
         //desencolar
         colita.remove();
         System.out.println("El ticket a ser atendido: "
                 +colita.peek());
-        
         //recorrido
-        
         while(!colita.isEmpty()){
             System.out.println("Atendiendo al ticket: "
                     +colita.remove());
